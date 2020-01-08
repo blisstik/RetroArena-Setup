@@ -9,5 +9,4 @@ index 0d42ff79d7..b8ec6e14c6 100644
 -         menu_input_dialog_start_search();
 +         //menu_input_dialog_start_search();
           break;
- 
-       case MENU_ACTION_SCAN:
+        case MENU_ACTION_SCAN:
