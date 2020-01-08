@@ -1,7 +1,7 @@
-diff --git a/menu/menu_generic.c b/menu/menu_generic.c
+diff --git a/menu/drivers/menu_generic.c b/menu/drivers/menu_generic.c
 index 0d42ff79d7..b8ec6e14c6 100644
---- a/menu/menu_generic.c
-+++ b/menu/menu_generic.c
+--- a/menu/drivers/menu_generic.c
++++ b/menu/drivers/menu_generic.c
 @@ -762,9 +762,9 @@ int menu_entry_action(menu_entry_t *entry, unsigned i, enum menu_action action)
                    entry->label, entry->type, i);
           break;
