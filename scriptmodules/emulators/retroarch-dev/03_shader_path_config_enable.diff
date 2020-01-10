@@ -1,7 +1,7 @@
 diff --git a/configuration.c b/configuration.c
 index 810988a..60c3588 100644
---- a/configuration1.c
-+++ b/configuration2.c
+--- a/configuration.c
++++ b/configuration.c
 @@ -1214,6 +1214,8 @@ static struct config_path_setting *populate_settings_path(settings_t *settings,
           settings->paths.path_core_options, false, NULL, true);
     SETTING_PATH("libretro_info_path",
@@ -32,8 +32,8 @@ index 810988a..60c3588 100644
                    path_overrides[i].ptr);
 diff --git a/configuration.h b/configuration.h
 index c14c307..76863ac 100644
---- a/configuration1.h
-+++ b/configuration2.h
+--- a/configuration.h
++++ b/configuration.h
 @@ -685,6 +685,7 @@ typedef struct settings
        char path_libretro_info[PATH_MAX_LENGTH];
        char path_cheat_settings[PATH_MAX_LENGTH];
@@ -44,8 +44,8 @@ index c14c307..76863ac 100644
        char directory_audio_filter[PATH_MAX_LENGTH];
 diff --git a/retroarch.c b/retroarch.c
 index 2f52985..e468bd5 100644
---- a/retroarch1.c
-+++ b/retroarch2.c
+--- a/retroarch.c
++++ b/retroarch.c
 @@ -26227,6 +26227,7 @@ static bool retroarch_load_shader_preset_internal(
  {
     unsigned i;
