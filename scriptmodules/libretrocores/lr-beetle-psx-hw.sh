@@ -22,12 +22,13 @@ function depends_lr-beetle-psx-hw() {
 }
 
 function sources_lr-beetle-psx-hw() {
-    gitPullOrClone "$md_build" https://github.com/ZachCook/beetle-psx-libretro.git lightrec
+    gitPullOrClone "$md_build" https://github.com/libretro/beetle-psx-libretro.git
 }
 
 function build_lr-beetle-psx-hw() {
     make clean
-    make HAVE_HW=1
+    #make HAVE_HW=1
+    make HAVE_LIGHTREC=1
     md_ret_require=(
         'mednafen_psx_hw_libretro.so'
     )
