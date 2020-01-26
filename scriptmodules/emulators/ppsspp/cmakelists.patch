@@ -1,8 +1,8 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 5193b756a2..4239305158 100644
---- a/CMakeLists.txt
-+++ b/CMakeLists.txt
-@@ -71,7 +71,7 @@ endif()
+index e724ec6..efb42d5 100644
+--- a/cmakelists1.patch
++++ b/cmakelists2.patch
+@@ -67,7 +67,7 @@ endif()
  
  if(NOT ANDROID AND NOT IOS)
  	if(ARM_DEVICE OR SIMULATOR)
@@ -11,12 +11,12 @@ index 5193b756a2..4239305158 100644
  	endif()
  endif()
  
-@@ -90,7 +90,7 @@ endif()
+@@ -86,7 +86,7 @@ endif()
  
- # We only support Vulkan on Unix, Android and Windows.
- if(ANDROID OR WIN32 OR (UNIX AND NOT APPLE AND NOT ARM_NO_VULKAN))
+ # We only support Vulkan on Unix, macOS (by MoltenVK), Android and Windows.
+ if(ANDROID OR WIN32 OR (UNIX AND NOT ARM_NO_VULKAN))
 -	set(VULKAN ON)
 +	set(VULKAN OFF)
  endif()
  
- if(NOT DEFINED HEADLESS)
+ if(GOLD)
