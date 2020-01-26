@@ -1,7 +1,7 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
 index e724ec6..efb42d5 100644
---- a/cmakelists1.patch
-+++ b/cmakelists2.patch
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
 @@ -67,7 +67,7 @@ endif()
  
  if(NOT ANDROID AND NOT IOS)
