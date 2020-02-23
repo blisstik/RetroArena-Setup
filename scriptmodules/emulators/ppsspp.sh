@@ -40,10 +40,6 @@ function sources_ppsspp() {
         sed -i -e 's:GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT://GL_APICALL GLint GL_APIENTRY glGetFragDataIndexEXT:g' "$gles2/gl2ext.h"
     fi
     
-    if isPlatform "odroid-n2"; then
-        applyPatch "$md_data/cmakelists.patch"
-    fi
-
     if isPlatform "rockpro64"; then
         applyPatch "$md_data/cmakelists.patch"
         applyPatch "$md_data/rockpro64.patch"
