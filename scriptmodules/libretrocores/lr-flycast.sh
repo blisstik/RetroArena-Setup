@@ -25,7 +25,7 @@ function build_lr-flycast() {
     if isPlatform "rockpro64"; then
         make platform=rockpro64 ARCH=arm
     elif isPlatform "odroid-n2"; then
-        make platform=odroid-n2
+        make -j4 platform=odroid-n2 ARCH=arm
     else
         make platform=odroid BOARD="ODROID-XU3" ARCH=arm
     fi
