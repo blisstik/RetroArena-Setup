@@ -10,7 +10,7 @@
 #
 
 rp_module_id="retroarch"
-rp_module_desc="RetroArch v1.8.2 - stable branch"
+rp_module_desc="RetroArch v1.8.5 - stable branch"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/RetroArch/master/COPYING"
 rp_module_section="core"
 
@@ -22,7 +22,7 @@ function depends_retroarch() {
 
 function sources_retroarch() {
     if [ "$md_id" == "retroarch" ]; then
-        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.8.2
+        gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git v1.8.5
     else
         gitPullOrClone "$md_build" https://github.com/libretro/RetroArch.git
     fi
